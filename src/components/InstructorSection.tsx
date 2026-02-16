@@ -46,21 +46,23 @@ export function InstructorSection({
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 bg-white overflow-hidden">
+    <section ref={sectionRef} className="py-10 md:py-12 px-4 bg-white overflow-hidden">
       <div className="container mx-auto max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Foto do Formador com animação slide-in */}
           <div className="flex justify-center">
             <div
-              className={`relative w-80 h-80 transition-all duration-1000 ease-out ${isVisible
-                  ? 'opacity-100 translate-x-0'
-                  : 'opacity-0 -translate-x-20'
+              className={`relative w-72 h-72 md:w-[420px] md:h-[420px] transition-all duration-1000 ease-out ${isVisible
+                ? 'opacity-100 translate-x-0'
+                : 'opacity-0 -translate-x-20'
                 }`}
             >
               <img
                 src={instructorImage}
                 alt={instructorName}
                 className="w-full h-full object-contain drop-shadow-2xl"
+                style={{ imageRendering: 'auto' }}
+                loading="eager"
               />
             </div>
           </div>

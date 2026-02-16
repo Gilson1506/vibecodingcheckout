@@ -153,11 +153,11 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="py-16 px-4 bg-slate-50 relative overflow-hidden"
+        className="py-8 px-4 bg-slate-50 relative overflow-hidden"
       >
         <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <span className="text-sky-500 font-semibold tracking-wider text-sm uppercase mb-2 block">Destaque</span>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">{courseName}</h3>
             <p className="text-slate-500 text-lg">{config?.video_title || "Domine a web moderna com estilo"}</p>
@@ -211,14 +211,14 @@ export default function Home() {
 
 
       {/* Benefits Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-            className="text-center mb-16"
+            className="text-center mb-10"
           >
             <h3 className="text-3xl font-bold text-slate-900">Por que escolher o {courseName}?</h3>
             <p className="text-slate-500 mt-2">Tudo o que você precisa para decolar sua carreira</p>
@@ -256,10 +256,10 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        className="py-20 px-4 bg-slate-50/50"
+        className="py-12 px-4 bg-slate-50/50"
       >
         <div className="container mx-auto max-w-4xl">
-          <h3 className="text-3xl font-bold text-center mb-16 text-slate-900">
+          <h3 className="text-3xl font-bold text-center mb-10 text-slate-900">
             Conteúdo do Curso - {lessons.length} Aulas
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
@@ -326,7 +326,7 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        className="py-20 px-4"
+        className="py-12 px-4"
       >
         <div className="container mx-auto max-w-3xl">
           <Card className="border-2 border-sky-100 bg-gradient-to-br from-sky-50 to-white overflow-hidden relative">
@@ -386,7 +386,7 @@ export default function Home() {
       </motion.section>
 
       {/* Checkout Section */}
-      <section ref={checkoutRef} className="py-24 px-4 bg-slate-50" id="checkout">
+      <section ref={checkoutRef} className="py-14 px-4 bg-slate-50" id="checkout">
         <div className="container mx-auto">
           <motion.div
             initial="hidden"
@@ -395,7 +395,7 @@ export default function Home() {
             variants={fadeInUp}
           >
             <h3 className="text-3xl font-bold text-center mb-4 text-slate-900">Finalizar Inscrição</h3>
-            <p className="text-center text-slate-500 mb-12 max-w-2xl mx-auto">Preencha seus dados abaixo para receber o acesso imediato ao curso.</p>
+            <p className="text-center text-slate-500 mb-8 max-w-2xl mx-auto">Preencha seus dados abaixo para receber o acesso imediato ao curso.</p>
             <CheckoutForm coursePrice={coursePrice} courseName={courseName} whatsappNumber={whatsappNumber} />
           </motion.div>
         </div>
