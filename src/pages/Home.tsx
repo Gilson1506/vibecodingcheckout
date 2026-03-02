@@ -135,11 +135,8 @@ export default function Home() {
         className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-border shadow-sm"
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-sky-400 rounded-xl flex items-center justify-center shadow-md">
-              <BookOpen className="w-6 h-6 text-white" />
-            </div>
-            <h1 className="text-xl font-bold text-slate-800">Vibe Coding</h1>
+          <div className="flex items-center">
+            <img src="/logo.png" alt="Logo" className="h-18 w-auto" />
           </div>
           <Button onClick={scrollToCheckout} className="bg-sky-500 hover:bg-sky-600 text-white shadow-lg shadow-sky-500/20 transition-all hover:scale-105">
             Comprar Agora
@@ -406,11 +403,8 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-10 mb-10">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-sky-400 rounded-lg flex items-center justify-center">
-                  <BookOpen className="w-4 h-4 text-white" />
-                </div>
-                <h4 className="font-bold text-slate-800">Vibe Coding</h4>
+              <div className="flex items-center mb-6">
+                <img src="/logo.png" alt="Logo" className="h-24 w-auto" />
               </div>
               <p className="text-slate-500 text-sm leading-relaxed">
                 Transformando carreiras através do ensino de programação prático, moderno e acessível.
